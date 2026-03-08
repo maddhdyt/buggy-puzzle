@@ -4,6 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="src/style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +58,18 @@
             <img class="body" src="assets/img/body.png" alt="body">
          </div>
       </div>
+      <div class="reference">
+         <h2>Reference</h2>
+         <img src="assets/img/puzzle reference.png" alt="">
+      </div>
+      <p class="copyright">&copy; <span id="tahun-aktif"></span> Buggy Pirates x National University of Sumedang. Copying this interface triggers the Muggy Ball attack.</p>
    </div>
 </body>
+
+<script>
+   const rentangTahun = document.getElementById("tahun-aktif")
+   const waktuSekarang = new Date()
+   rentangTahun.textContent = waktuSekarang.getFullYear()
+</script>
 
 </html>
